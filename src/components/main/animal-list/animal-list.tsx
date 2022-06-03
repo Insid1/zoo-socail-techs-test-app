@@ -8,7 +8,7 @@ function AnimalList() {
 
   if (animals.length === 0) {
     return (
-      <div>empty list</div>
+      <div>No Animal Captured:(</div>
     );
   }
 
