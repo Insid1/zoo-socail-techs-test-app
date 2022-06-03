@@ -4,6 +4,8 @@ import {
 import { IAnimal } from 'types/data-types';
 import { getRandomAnimal } from 'utils/animal';
 
+const LVL_INCREMENT = 1;
+
 interface IInitialState {
   animals: IAnimal[],
   maxLevel: number,
@@ -13,7 +15,7 @@ interface IInitialState {
 const initialState: IInitialState = {
   animals: [],
   maxLevel: 5,
-  minLevel: 0,
+  minLevel: 1,
 };
 
 const animalsSlice = createSlice({
@@ -29,7 +31,7 @@ const animalsSlice = createSlice({
     feedAnimal(state, action: PayloadAction<string>) {
       const theAnimal = state.animals.find(({ id }) => id === action.payload);
       if (theAnimal) {
-        theAnimal.level += 1;
+        theAnimal.level += LVL_INCREMENT;
       }
     },
   },
