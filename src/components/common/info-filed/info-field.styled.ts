@@ -17,6 +17,7 @@ const Label = styled.span`
 
 const Title = styled.span`
   display: inline-block;
+  text-transform: capitalize;
   color: ${({ theme }) => theme.color.black};
 `;
 

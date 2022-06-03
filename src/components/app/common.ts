@@ -13,7 +13,7 @@ const appTheme: DefaultTheme = {
     large: '92px',
   },
   color: {
-    primary: '#2196f3',
+    primary: '#009688',
     secondary: '#c5cae9',
     white: '#fafafa',
     whiteLight: '#eeeeee',

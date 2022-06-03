@@ -4,12 +4,13 @@ const Button = styled.button`
   cursor: pointer;
   display: inline-block;
   outline: none;
+  min-width: fit-content;
+  max-width: 11rem;
   color: ${({ theme }) => theme.color.white};
   text-transform: capitalize;
   border-radius: 3px;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   margin: 0.5rem 1rem;
-  width: 11rem;
   background-color: ${({ theme }) => theme.color.primary};
   opacity: 70%;
   border: none;
